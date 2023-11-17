@@ -3,5 +3,18 @@
     <body>
         <h1>Testing</h1>
         <p>This file was pushed to Github</p>
+        <hr />
+        <div id="number_wrapper">
+            <button onclick="randomNumber()">Generate a number</button>
+            <br />
+            <h2 id="number"></h2>
+        </div>
+        <script>
+            function randomNumber() {
+                let randNumber = Math.floor(Math.random() * 100);
+
+                document.getElementById("number").innerText = randNumber
+            }
+        </script>
     </body>
 </html>
